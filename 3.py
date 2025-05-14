@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-omega =[0,np.pi/4,np.pi/2]
+omega =[0,np.pi/4,np.pi/2,np.pi]
 
 n=np.arange(0,40)
 plt.figure(figsize=(10,6))
