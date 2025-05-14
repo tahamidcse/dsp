@@ -24,6 +24,7 @@ ramp = ramp_signal(n)
 exponential = exponential_signal(1.5,n)
 
 
+
 plt.figure(figsize=(12,8))
 
 plt.subplot(3,2,1)
@@ -44,5 +45,28 @@ plt.title("Exponential Signal")
 plt.xlabel("n")
 plt.ylabel("Amplitude")
 
+
+#sine signal\
+f1=10
+n=np.arange(0,1,0.01)
+xn = sine_signal(f1,n) #continuous signal
+
+plt.subplot(3,2,4)
+plt.stem(n,xn)
+plt.title("Sine Wave")
+plt.xlabel("time")
+plt.ylabel("Amplitude")
+plt.grid(True)
+
+f1=10
+n=np.arange(0,1,0.01)
+xn = cosine_signal(f1,n) #continuous signal
+
+plt.subplot(3,2,5)
+plt.stem(n,xn)
+plt.title("Cosine Wave")
+plt.xlabel("time")
+plt.ylabel("Amplitude")
+plt.grid(True)
 plt.tight_layout()
 plt.show()
