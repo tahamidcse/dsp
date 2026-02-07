@@ -1,4 +1,14 @@
-%%writefile phonebook_search.cu
+University of Rajshahi
+Dept. of Computer Science and Engineering
+B. SC. Engg. Part IV Odd Semester Examination 2023
+CSE 4112 (Parallel Processing and Distributed System Lab) Group – 2
+
+1. Write a program using CUDA to compute  C[1:k] = A[1:k] \times B[1:k] . Here  A  is an array of matrices with dimension  m \times n  and  B  is an array of matrices with dimension  n \times p . And  k  is the size of array.
+      Input: No. of threads,  k, m, n, p 
+      Output: Execution Time,  A[0], B[0], C[0] 
+2. Consider phonebooks given as text files and a phone number  P . Write a program using MPI to search for the person's names who's contact phone number is  P  in the phonebooks. The program will generate an output file containing the line number (within input file) and persons' names with phone number  P .
+      Input: No. of processes, phone number  P 
+      Output: Execution Time, a text file containing the line number and names with phone number  P  in ascending order of name%%writefile phonebook_search.cu
 #include <bits/stdc++.h>
 using namespace std;
 #include <cuda.h>
